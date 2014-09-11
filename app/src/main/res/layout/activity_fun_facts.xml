@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".FunFactsActivity"
+    android:id="@+id/layout"
+    android:background="#ff51b46d">
+
+    <TextView
+        android:text="Did you know?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textfact"
+        android:textSize="24sp"
+        android:textColor="#80ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We're even"
+        android:id="@+id/total"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I paid"
+        android:textColor="#ff51b46d"
+        android:id="@+id/ibutton"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="50dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You paid"
+        android:textSize="50dp"
+        android:textColor="#ff51b46d"
+        android:id="@+id/youbutton"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountyou"
+        android:layout_above="@+id/youbutton"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter how much you paid"
+        android:inputType="phone"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amounti"
+        android:layout_below="@+id/ibutton"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
